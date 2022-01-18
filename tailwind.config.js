@@ -10,9 +10,11 @@ module.exports = {
     mode: 'jit',
     content: [
         './theme.json',
-        './**/*.js',
-        './**/*.php',
-        './**/*.html',
+        './js/*.js',
+        './*.php',
+        './includes/*.php',
+        './template-parts/*.php',
+        './*.html',
     ],
     theme: {
         fontFamily: {
