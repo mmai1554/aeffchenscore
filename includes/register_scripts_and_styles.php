@@ -4,9 +4,11 @@
  */
 add_action( 'wp_enqueue_scripts', function () {
 
+	wp_enqueue_style( 'aeff', THEME_URL . '/style.css', [], AEFF_VERSION, true );
+
 	wp_enqueue_script( 'swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.js', [], null, true );
 	wp_enqueue_script( 'alpine', 'https://unpkg.com/alpinejs', [ 'swiper' ], null, false );
-	wp_enqueue_script( 'aeff', THEME_URL . 'app.js', [ 'swiper' ], null, true );
+	wp_enqueue_script( 'aeff', THEME_URL . '/js/app.js', [ 'swiper' ], AEFF_VERSION, true );
 
 } );
 

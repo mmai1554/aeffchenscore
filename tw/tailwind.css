@@ -1,0 +1,42 @@
+@import "./custom/file-header.css";
+/**
+ * The line above injects the WordPress file header. It needs to be first,
+ * before this comment.
+ */
+
+/**
+ * This injects custom font declarations.
+ */
+@import "./custom/fonts.css";
+
+/**
+ * This injects Tailwind's base styles and any base styles registered by
+ * plugins, then adds custom base styles.
+ */
+@import "tailwindcss/base";
+@import "./custom/base.pcss";
+
+/**
+ * This injects Tailwind's component classes and any component classes
+ * registered by plugins, then adds custom component classes.
+ */
+@import "tailwindcss/components";
+@import "./custom/components.pcss";
+
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins, then adds custom utility classes.
+ */
+@import "tailwindcss/utilities";
+@import "./custom/utilities.pcss";
+
+
+:root {
+	--mnc-color-black: #000000;
+	--mnc-color-text: #000000;
+	--mnc-color-white: #FFF;
+	--mnc-color-badge: #5e5e5e;
+	--mnc-color-gray: #acacac;
+	--mnc-color-gray-100: #EEE;
+	--mnc-color-danger: #8e0a0a;
+}

@@ -15,8 +15,8 @@
     "tailwindcss": "^3.0.7"
   },
   "scripts": {
-    "development:frontend": "npx tailwindcss --postcss -i ./tailwind/tailwind.css -c ./tailwind/tailwind-frontend.config.js -o ./theme/style.css",
-    "development:editor": "npx tailwindcss --postcss -i ./tailwind/tailwind.css -c ./tailwind/tailwind-editor.config.js -o ./theme/style-editor_tw.css",
+    "development:frontend": "npx tailwindcss --postcss -i ./tw/tailwind.css -c ./tw/tailwind.config.js -o ./style.css",
+    "development:editor": "npx tailwindcss --postcss -i ./tw/tailwind.css -c ./tw/tailwind-editor.config.js -o ./style-editor_tw.css",
     "development": "run-p development:*",
     "dev": "npm run development",
     "watch:frontend": "npm run development:frontend -- --watch",
