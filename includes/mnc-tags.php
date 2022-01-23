@@ -21,7 +21,12 @@ function mnc_render_template() {
 	return $html;
 }
 
-function mnc_favorites_toggler() {
+function mnc_logo() {
+	return mnc_render_template();
+}
+
+
+function mnc_nav_horizontal() {
 	return mnc_render_template();
 }
 

@@ -1,0 +1,62 @@
+#MncMenu {
+
+    @apply my-0 flex items-center space-x-2;
+
+    @screen lg {
+        @apply space-x-4
+    }
+
+
+    li.menu-item {
+        @apply relative text-base leading-none uppercase tracking-wider font-semibold;
+        @media (max-width: 400px) {
+            @apply text-xs;
+        }
+        @screen md {
+            @apply text-lg;
+        }
+        @screen lg {
+            @apply tracking-widest font-normal text-lg leading-none;
+            &:after {
+                transition: all 300ms ease-in-out;
+
+                display: block;
+                position: absolute;
+                content: ' ';
+                left: -2rem;
+                bottom: -0.75rem;
+                z-index: 1000;
+
+                border-bottom: 2px solid white;
+
+            }
+
+            &.current-menu-item:after {
+                content:' ';
+                display: block;
+                position: absolute;
+                left:0;
+                bottom: -0.75rem;
+                border-bottom: 2px solid #000 !important;
+                width:100%;
+            }
+
+            &:hover:after {
+                content: ' ';
+                display: block;
+                position: absolute;
+                right: 0 !important;
+                width: 100%;
+                z-index: 1000;
+                left: 0;
+                border-bottom: 2px solid #000 !important;
+            }
+        }
+
+
+        a {
+            @apply inline-block leading-none;
+        }
+
+    }
+}

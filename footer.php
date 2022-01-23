@@ -11,22 +11,15 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'aeffchenscore' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'aeffchenscore' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'aeffchenscore' ), 'aeffchenscore', '<a href="http://underscores.me/">Haushaltstuch Mc Handtuch</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+
+</div><!-- #MncFlexer -->
 </div><!-- #page -->
+
+<footer id="colophon" class="relative z-30">
+   <div class="z-20 relative z-20 overflow-x-hidden">
+       <p>Hier steht der Footer</p>
+   </div>
+</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
 

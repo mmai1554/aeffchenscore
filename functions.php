@@ -20,6 +20,7 @@ include_once THEME_DIR . '/includes/theme_setup.php';
 include_once THEME_DIR . '/includes/register_scripts_and_styles.php';
 include_once THEME_DIR . '/includes/register_image_sizes.php';
 include_once THEME_DIR . '/includes/register_wp_optimizing.php';
+include_once THEME_DIR . '/includes/mnc-tags.php';
 
 require get_template_directory() . '/inc/template-tags.php';
 // require get_template_directory() . '/inc/custom-header.php';
