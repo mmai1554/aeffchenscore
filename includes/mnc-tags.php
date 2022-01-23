@@ -30,6 +30,11 @@ function mnc_nav_horizontal() {
 	return mnc_render_template();
 }
 
+function mnc_nav_vertical() {
+	return mnc_render_template();
+}
+
+
 /**
  * @return string
  */

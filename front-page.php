@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-        Ich bin die Homepage
+        <?= mnc_nav_vertical(); ?>
 		<?php
 		while ( have_posts() ) :
 			the_post();
